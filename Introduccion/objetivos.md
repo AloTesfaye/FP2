@@ -1,2 +1,1 @@
-#objetivos
-Aprender programacion 
+
