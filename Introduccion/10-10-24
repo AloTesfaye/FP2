@@ -1,0 +1,117 @@
+// CK_101024.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    // Enteros
+    int a = 10;
+    int b = 20;
+    int c;
+
+    // Flotantes
+    float x = 15.5;
+    float y = 5.2;
+    float z;
+
+    // 1. Adición
+    c = a + b;
+    z = x + y;
+    cout << "Operación adición enteros: " << c << endl;
+    cout << "Operación adición decimal: " << z << endl;
+
+    // 2. Substracción
+    c = a - b;
+    z = x - y;
+    cout << "Operación substracción enteros: " << c << endl;
+    cout << "Operación substracción decimal: " << z << endl;
+
+    // 3. Multiplicación
+    c = a * b;
+    z = x * y;
+    cout << "Operación multiplicación enteros: " << c << endl;
+    cout << "Operación multiplicación decimal: " << z << endl;
+
+    // 4. División
+    c = b / a;
+    z = x / y;
+    cout << "Operación división enteros: " << c << endl;
+    cout << "Operación división decimal: " << z << endl;
+
+    // 5. Residuo ( Módulo - Resto de la división)
+    c = b % a;
+    cout << "Operación residuo enteros: " << c << endl;
+
+    // 6. Operaciones mixtas
+    z = a + x;
+    cout << "Operaciones mixtas 1: " << z << endl;
+    z = b - y;
+    cout << "Operaciones mixtas 2: " << z << endl;
+    z = a * y;
+    cout << "Operaciones mixtas 3: " << z << endl;
+    z = b / x;
+    cout << "Operaciones mixtas 4: " << z << endl;
+    z = (a + b) * x / y ; 
+    cout << "Operaciones mixtas 5: " << z << endl;
+
+    // 7. Más ejemplos con flotantes
+    z = x + 10.3;
+    cout << "Operaciones flotantes 1: " << z << endl;
+    z = y * 2.5;
+    cout << "Operaciones flotantes 2: " << z << endl;
+    z = x / 2.0;
+    cout << "Operaciones flotantes 3: " << z << endl;
+    z = y - 3.2;
+    cout << "Operaciones flotantes 4: " << z << endl;
+
+    // 8. Combinación de números enteros y decimales
+    z = a + x - b / 2.0 + y * 1.5;
+    cout << "Operaciones Combinaciones: " << z << endl;
+
+    // 9. Combinaciones más complejas
+    z = (a + x) * (b - y) / (a * y);
+    cout << "Operaciones Combinaciones más complejas : " << z << endl;
+    
+    // 10. Operaciones aritméticas mixtas 
+    double d = 7.4;
+    z = a + d;
+    cout << "Operaciones aritméticas mixtas 1: " << z << endl;
+    z = b - d;
+    cout << "Operaciones aritméticas mixtas 2: " << z << endl;
+    z = d * y;
+    cout << "Operaciones aritméticas mixtas 3: " << z << endl;
+    z = d / x;
+    cout << "Operaciones aritméticas mixtas 4: " << z << endl;
+
+    // 11. Números negativos
+    int negInt = -25;
+    cout << "Operaciones Números negativos 1: " << negInt << endl;
+    float negFloat = -12.3;
+    cout << "Operaciones Números negativos 2: " << negFloat << endl;
+    c = a + negInt;
+    cout << "Operaciones Números negativos 3: " << c << endl;
+    c = b + negFloat;
+    cout << "Operaciones Números negativos 4: " << c << endl;
+    z = negFloat - y;
+    cout << "Operaciones Números negativos 5: " << z << endl;
+    z = negInt * b;
+    cout << "Operaciones Números negativos 6: " << z << endl;
+    
+    // 12. Operaciones unitarias
+    a++;
+    cout << "Suma Unitaria: " << a << endl;
+    b--;
+    cout << "Resta Unitaria: " << b << endl;
+    x += 2.5;
+    cout << "Suma Unitaria 2: " << x << endl;
+    y -= 1.2; 
+    cout << "Resta Unitaria 2: " << y << endl;
+
+    cout << boolalpha;
+    cout << (a > b) << endl;
+    cout << (a < b) << endl;
+
+}
