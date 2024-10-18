@@ -1,0 +1,70 @@
+// ConsoleApplication3.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  // Operadores lógicos
+	cout << boolalpha;
+	bool p = true, q = false;
+
+	//1. Lógico AND
+	cout << "(p and q)" << (p and q) << endl;
+
+	//2. Lógico OR
+	cout << "(p or q)" << (p or q) << endl;
+
+	//3. Lógico NOT
+	cout << "(!p): " << (!p) << endl;
+
+    //4. Combinación de AND y NOT
+	cout << "(p and not (q)): " << (p and not(q)) << endl;
+
+	//5. Doble NOT
+	cout << "(not(not(q))): " << (not(not(q))) << endl;
+
+	//6. Operaciones mixtas
+	cout << "(not(p and q) or(p or not(q))): " << (not(p and q) or (p or not(q))) << endl;
+
+	//7. Asignación de variables con operadores lógicos
+	bool a = p and q; 
+	cout << "Valor asignado a variable a: " << a << endl;
+
+	//8. Operaciones lógicas con números enteros
+	int x = 5, y = 0;
+	cout << "(x and y): " << (x and y) << endl;
+
+	//9. Operaciones lógicas con tipos de números reales
+	float m = 3.5, n = 0.0;
+	cout << "(m or n): " << (m or n) << endl;
+
+	//10. Expresiones anidadas
+	cout << "((x and not(y)) and (m or not(q))): " << ((x and not(y)) and (m or not(q))) << endl;
+
+	//11. Uso de operadores lógicos con comparación de cadenas de texto (string)
+	string str1 = "hola";
+	string str2 = "Mundo";
+	cout << (str1 == str2) << endl;
+	cout << (str1 != str2) << endl; 
+	cout << ((str1 != "") and (str2 != "")) << endl; 
+
+	// if else 
+	//Ejercicio 1 si un número es par o impar
+	int num = 0;
+	cout << "Ingresa un numero ";
+	cin >> num;
+	cout << endl; 
+	if (num % 2 == 0)
+		cout << "Es par" << endl;
+	else
+		cout << "Es impar " << endl; 
+ 
+
+
+
+
+
+
+}
